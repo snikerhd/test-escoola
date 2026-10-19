@@ -1,0 +1,29 @@
+ADDON RUTRACKER - COMO CONFIGURAR NUM PC NOVO
+=============================================
+
+NAO PRECISAS DE INSTALAR NADA A MAO.
+
+1. Faz duplo clique em PREPARAR.bat
+   - Pede permissoes de administrador (clica Sim)
+   - Instala automaticamente o Node.js e o PostgreSQL
+   - Cria a base de dados e o ficheiro .env
+   - Usa o Google Chrome que ja tens (se nao tiver, instala-o)
+   - No fim abre uma janela do Chrome para entrares
+     na tua conta RuTracker (fecha a janela quando terminares)
+
+2. Para usar o addon neste PC:
+   - Duplo clique em iniciar-site.bat
+   - Abre http://localhost:3000 no browser
+
+3. Para teres um LINK PUBLICO (Stremio Web ou telemovel):
+   - Com o site ja ligado, corre iniciar-tunnel.bat
+   - Aparece um endereco tipo https://algo.trycloudflare.com
+   - Usa esse endereco no Stremio (URL do addon)
+   - Deixa as duas janelas abertas enquanto usas
+
+NOTAS:
+- A instalacao demora 10-20 minutos e precisa de internet.
+- Se algo falhar, fecha tudo e volta a correr o PREPARAR.bat
+  (ele salta o que ja esta feito).
+- A sessao do RuTracker fica guardada neste PC
+  (pasta C:\Users\<teu nome>\.rutracker-addon).

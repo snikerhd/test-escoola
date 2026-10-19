@@ -1,0 +1,53 @@
+
+> dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.17:3000
+- Environments: .env
+✓ Ready in 514ms
+
+(node:22264) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ GET /api/stremio/test?action=status 200 in 1758ms (next.js: 556ms, application-code: 1202ms)
+ GET /api/stremio/test?action=search&q=inception 200 in 3.2s (next.js: 4ms, application-code: 3.2s)
+⨯ ./src/app/api/stremio/test/route.ts:153:2
+Expected '}', got '<eof>'
+  [90m151 |[0m
+  [90m152 |[0m   [36mreturn[0m [33mNextResponse[0m.json(out, { headers: [33mCORS[0m });
+[31m[1m>[0m [90m153 |[0m }
+  [90m    |[0m  [31m[1m^[0m
+
+Parsing ecmascript source code failed
+
+
+
+./src/app/api/stremio/test/route.ts:148:5
+Expected a semicolon
+  [90m146 |[0m       out.infoHash = m ? extractInfoHash(m) : [36mnull[0m;
+  [90m147 |[0m     }
+[31m[1m>[0m [90m148 |[0m   } [36mcatch[0m (e) {
+  [90m    |[0m     [31m[1m^^^^^[0m
+  [90m149 |[0m     out.error = [33mString[0m(e);
+  [90m150 |[0m   }
+  [90m151 |[0m
+
+Parsing ecmascript source code failed
+
+
+
+./src/app/api/stremio/test/route.ts:153:2
+Expected a semicolon
+  [90m151 |[0m
+  [90m152 |[0m   [36mreturn[0m [33mNextResponse[0m.json(out, { headers: [33mCORS[0m });
+[31m[1m>[0m [90m153 |[0m }
+  [90m    |[0m  [31m[1m^[0m
+
+Parsing ecmascript source code failed
+
+
+ GET /api/stremio/test?action=raw&q=inception 500 in 933ms (next.js: 795ms, application-code: 138ms)
+ GET /api/stremio/test?action=raw&q=inception 200 in 3.4s (next.js: 129ms, application-code: 3.2s)
+ GET /api/stremio/test?action=search&q=inception 200 in 3.4s (next.js: 123ms, application-code: 3.3s)
+[?25h
